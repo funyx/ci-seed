@@ -89,7 +89,7 @@ $config['admin_group']                = 'admin';             // Default administ
 $config['identity']                   = 'email';             // You can use any unique column in your table as identity column. The values in this column, alongside password, will be used for login purposes
 $config['min_password_length']        = 8;                   // Minimum Required Length of Password
 $config['max_password_length']        = 20;                  // Maximum Allowed Length of Password
-$config['email_activation']           = FALSE;               // Email Activation for registration
+$config['email_activation']           = TRUE;               // Email Activation for registration
 $config['manual_activation']          = FALSE;               // Manual Activation for registration
 $config['remember_users']             = TRUE;                // Allow users to be remembered and enable auto-login
 $config['user_expire']                = 86500;               // How long to remember the user (seconds). Set to zero for no expiration
@@ -100,7 +100,7 @@ $config['maximum_login_attempts']     = 3;                   // The maximum numb
 $config['lockout_time']               = 600;                 /* The number of seconds to lockout an account due to exceeded attempts
 																You should not use a value below 60 (1 minute) */
 $config['forgot_password_expiration'] = 0;                   // The number of seconds after which a forgot password request will expire. If set to 0, forgot password requests will not expire.
-$config['recheck_timer']              = 0;                   /* The number of seconds after which the session is checked again against database to see if the user still exists and is active.
+$config['recheck_timer']              = 600;                   /* The number of seconds after which the session is checked again against database to see if the user still exists and is active.
 																Leave 0 if you don't want session recheck. if you really think you need to recheck the session against database, we would
 																recommend a higher value, as this would affect performance */
 
@@ -122,17 +122,17 @@ $config['identity_cookie_name'] = 'identity';
  | 	  'file' = Use the default CI config or use from a config file
  | 	  array  = Manually set your email config settings
  */
-$config['use_ci_email'] = FALSE; // Send Email using the builtin CI email class, if false it will return the code and the identity
+$config['use_ci_email'] = TRUE; // Send Email using the builtin CI email class, if false it will return the code and the identity
 $config['email_config'] = array();
 $config['email_config']['protocol'] = 'smtp';
-$config['email_config']['smtp_host'] = 'smtp.sendgrid.net';
-$config['email_config']['smtp_user'] = 'wubui';
-$config['email_config']['smtp_pass'] = '123654AAA';
-$config['email_config']['smtp_port'] = '587';
-$config['email_config']['mailtype'] = '587';
+$config['email_config']['smtp_host'] = 'smtp_host';
+$config['email_config']['smtp_user'] = 'smtp_username';
+$config['email_config']['smtp_pass'] = 'smtp_password';
+$config['email_config']['smtp_port'] = 'smtp_port';
+$config['email_config']['mailtype'] = 'html';
 $config['email_config']['crlf'] = '\r\n';
 $config['email_config']['newline'] = '\r\n';
-$config['email_config']['charset'] = 'iso-8859-1';
+$config['email_config']['charset'] = 'UTF-8';
 $config['email_config']['wordwrap'] = TRUE;
 
 

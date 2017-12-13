@@ -25,8 +25,28 @@ class Auth extends CI_Controller
 	 */
 	public function index()
 	{
+		if(!is_null($this->session->flashdata('message'))){
+			echo $this->session->flashdata('message');
+		}else{
+			redirect('auth/login','refresh');
+		}
+	}
 
-		var_dump((validation_errors()) ? validation_errors() : $this->session->flashdata('message'));
+	public function users(){
+		if(!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin()){
+			redirect('auth','refresh');
+		}
+		// set the flash data error message if there is one
+		$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+
+		//list the users
+		$this->data['users'] = $this->ion_auth->users()->result();
+		foreach ($this->data['users'] as $k => $user)
+		{
+			$this->data['users'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
+		}
+
+		$this->_render_page('auth/index', $this->data);
 	}
 
 	/**
@@ -51,7 +71,7 @@ class Auth extends CI_Controller
 				//if the login is successful
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('/', 'refresh');
+				redirect('auth/users', 'refresh');
 			}
 			else
 			{

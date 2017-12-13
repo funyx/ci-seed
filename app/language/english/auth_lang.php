@@ -43,6 +43,29 @@ $lang['index_inactive_link']     = 'Inactive';
 $lang['index_create_user_link']  = 'Create a new user';
 $lang['index_create_group_link'] = 'Create a new group';
 
+
+$lang['index_signup_link']       = 'Signup';
+// Create User
+$lang['signup_heading']                           = 'Signup';
+$lang['signup_subheading']                        = 'Please fill in the form below.';
+$lang['signup_fname_label']                       = 'First Name:';
+$lang['signup_lname_label']                       = 'Last Name:';
+$lang['signup_company_label']                     = 'Company Name:';
+$lang['signup_identity_label']                    = 'Identity:';
+$lang['signup_email_label']                       = 'Email:';
+$lang['signup_phone_label']                       = 'Phone:';
+$lang['signup_password_label']                    = 'Password:';
+$lang['signup_password_confirm_label']            = 'Confirm Password:';
+$lang['signup_submit_btn']                        = 'Create User';
+$lang['signup_validation_fname_label']            = 'First Name';
+$lang['signup_validation_lname_label']            = 'Last Name';
+$lang['signup_validation_identity_label']         = 'Identity';
+$lang['signup_validation_email_label']            = 'Email Address';
+$lang['signup_validation_phone_label']            = 'Phone';
+$lang['signup_validation_company_label']          = 'Company Name';
+$lang['signup_validation_password_label']         = 'Password';
+$lang['signup_validation_password_confirm_label'] = 'Password Confirmation';
+
 // Deactivate User
 $lang['deactivate_heading']                  = 'Deactivate User';
 $lang['deactivate_subheading']               = 'Are you sure you want to deactivate the user \'%s\'';

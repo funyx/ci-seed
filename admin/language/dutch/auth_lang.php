@@ -52,6 +52,29 @@ $lang['deactivate_submit_btn']               = 'Verzenden';
 $lang['deactivate_validation_confirm_label'] = 'bevestiging';
 $lang['deactivate_validation_user_id_label'] = 'Gebruikers ID';
 
+$lang['index_signup_link']       = 'Signup';
+// Create User
+$lang['signup_heading']                           = 'Signup';
+$lang['signup_subheading']                        = 'Please fill in the form below.';
+$lang['signup_fname_label']                       = 'First Name:';
+$lang['signup_lname_label']                       = 'Last Name:';
+$lang['signup_company_label']                     = 'Company Name:';
+$lang['signup_identity_label']                    = 'Identity:';
+$lang['signup_email_label']                       = 'Email:';
+$lang['signup_phone_label']                       = 'Phone:';
+$lang['signup_password_label']                    = 'Password:';
+$lang['signup_password_confirm_label']            = 'Confirm Password:';
+$lang['signup_submit_btn']                        = 'Create User';
+$lang['signup_validation_fname_label']            = 'First Name';
+$lang['signup_validation_lname_label']            = 'Last Name';
+$lang['signup_validation_identity_label']         = 'Identity';
+$lang['signup_validation_email_label']            = 'Email Address';
+$lang['signup_validation_phone_label']            = 'Phone';
+$lang['signup_validation_company_label']          = 'Company Name';
+$lang['signup_validation_password_label']         = 'Password';
+$lang['signup_validation_password_confirm_label'] = 'Password Confirmation';
+
+
 // Create User
 $lang['create_user_heading']                           = 'Gebruiker aanmaken';
 $lang['create_user_subheading']                        = 'Gelieve hieronder de gebruikersinformatie in te vullen.';
@@ -161,4 +184,3 @@ $lang['email_forgot_password_link']       = 'Reset uw wachtwoord';
 // New Password Email
 $lang['email_new_password_heading']    = 'Nieuw wachtwoord voor %s';
 $lang['email_new_password_subheading'] = 'Je wachtwoord werd gereset naar: %s';
-

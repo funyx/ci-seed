@@ -52,6 +52,29 @@ $lang['index_inactive_link']     = 'Inaktiv';
 $lang['index_create_user_link']  = 'Opret en ny bruger';
 $lang['index_create_group_link'] = 'Opret en ny gruppe';
 
+$lang['index_signup_link']       = 'Signup';
+// Create User
+$lang['signup_heading']                           = 'Signup';
+$lang['signup_subheading']                        = 'Please fill in the form below.';
+$lang['signup_fname_label']                       = 'First Name:';
+$lang['signup_lname_label']                       = 'Last Name:';
+$lang['signup_company_label']                     = 'Company Name:';
+$lang['signup_identity_label']                    = 'Identity:';
+$lang['signup_email_label']                       = 'Email:';
+$lang['signup_phone_label']                       = 'Phone:';
+$lang['signup_password_label']                    = 'Password:';
+$lang['signup_password_confirm_label']            = 'Confirm Password:';
+$lang['signup_submit_btn']                        = 'Create User';
+$lang['signup_validation_fname_label']            = 'First Name';
+$lang['signup_validation_lname_label']            = 'Last Name';
+$lang['signup_validation_identity_label']         = 'Identity';
+$lang['signup_validation_email_label']            = 'Email Address';
+$lang['signup_validation_phone_label']            = 'Phone';
+$lang['signup_validation_company_label']          = 'Company Name';
+$lang['signup_validation_password_label']         = 'Password';
+$lang['signup_validation_password_confirm_label'] = 'Password Confirmation';
+
+
 // Deactivate User
 $lang['deactivate_heading']                  = 'Deaktivér Bruger';
 $lang['deactivate_subheading']               = 'Er du sikker på at du ønsker at deaktivere brugeren \'%s\'';
@@ -170,4 +193,3 @@ $lang['email_forgot_password_link']       = 'Nulstil Dit Kodeordet';
 // New Password Email
 $lang['email_new_password_heading']    = 'Nyt kodeord for %s';
 $lang['email_new_password_subheading'] = 'Dit kodeord er blevet nulstillet til: %s';
-
